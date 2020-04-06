@@ -1,0 +1,27 @@
+---
+- hosts: all
+  roles:
+  - oasis_roles.rhsm
+  - oasis_roles.timezone
+  - redhatinsights.insights-client
+  - linux-system-roles.cockpit
+  - oasis_roles.firewalld
+  - apitanga.pcp
+  - oasis_roles.package_updater
+  vars:
+    rhsm_repositories:
+      only:
+      - rhel-8-for-x86_64-appstream-rpms
+      - rhel-8-for-x86_64-baseos-rpms
+    timezone: 'America/New_York'
+    firewalld_zone: public
+    firewalld_services:
+      - ssh
+      - pmcd
+      - cockpit
+    firewalld_become: true
+    cockpit_packages:
+      - cockpit-*
+    pcp_pmda:
+      - summary
+      - trace
