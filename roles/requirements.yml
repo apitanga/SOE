@@ -1,0 +1,7 @@
+- src: apitanga.pcp
+- src: oasis_roles.firewalld
+- src: oasis_roles.rhsm
+- src: oasis_roles.timezone
+- src: oasis_roles.package_updater
+- src: linux-system-roles.cockpit
+- src: redhatinsights.insights-client
