@@ -4,5 +4,4 @@
 - src: oasis_roles.timezone
 - src: oasis_roles.package_updater
 - src: linux-system-roles.cockpit
-  version: v0.2
 - src: redhatinsights.insights-client
