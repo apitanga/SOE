@@ -9,10 +9,10 @@
   - apitanga.pcp
   - oasis_roles.package_updater
   vars:
-    rhsm_repositories:
-      only:
-      - rhel-8-for-x86_64-appstream-rpms
-      - rhel-8-for-x86_64-baseos-rpms
+    #rhsm_repositories:
+     # only:
+      #- rhel-8-for-x86_64-appstream-rpms
+      #- rhel-8-for-x86_64-baseos-rpms
     timezone: 'America/New_York'
     firewalld_zone: public
     firewalld_services:
